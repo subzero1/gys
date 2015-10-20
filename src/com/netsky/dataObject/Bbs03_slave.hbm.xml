@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Bbs03_slave"
+        table="BBS03_SLAVE"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Bbs03_slave.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="bbs_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="bbs_id"
+        />
+
+        <property
+            name="cur_name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="cur_name"
+        />
+
+        <property
+            name="dis_date"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="dis_date"
+        />
+
+        <property
+            name="source_name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="source_name"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Bbs03_slave.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

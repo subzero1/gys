@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gd04_clfysz"
+        table="GD04_CLFYSZ"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gd04_clfysz.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="dxgc_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="dxgc_id"
+        />
+
+        <property
+            name="flhjz"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="flhjz"
+        />
+
+        <property
+            name="flyj"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="flyj"
+        />
+
+        <property
+            name="flz"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="flz"
+        />
+
+        <property
+            name="fy_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="fy_id"
+        />
+
+        <property
+            name="fymc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="fymc"
+        />
+
+        <property
+            name="fyz"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="fyz"
+        />
+
+        <property
+            name="gcxm_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcxm_id"
+        />
+
+        <property
+            name="zclb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="zclb"
+        />
+
+        <property
+            name="bgbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bgbh"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gd04_clfysz.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

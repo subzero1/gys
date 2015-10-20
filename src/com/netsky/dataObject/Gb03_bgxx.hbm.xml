@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gb03_bgxx"
+        table="GB03_BGXX"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gb03_bgxx.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="bgbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bgbh"
+        />
+
+        <property
+            name="fbt"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="fbt"
+        />
+
+        <property
+            name="mc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="mc"
+        />
+
+        <property
+            name="sxh"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="sxh"
+        />
+
+        <property
+            name="bdwj"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bdwj"
+        />
+
+        <property
+            name="b4lb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="b4lb"
+        />
+
+        <property
+            name="dyscbgbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="dyscbgbh"
+        />
+
+        <property
+            name="xgfy"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="xgfy"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gb03_bgxx.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

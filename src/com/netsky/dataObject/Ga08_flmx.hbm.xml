@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Ga08_flmx"
+        table="GA08_FLMX"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Ga08_flmx.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="bgbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bgbh"
+        />
+
+        <property
+            name="flk_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="flk_id"
+        />
+
+        <property
+            name="flsm"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="flsm"
+        />
+
+        <property
+            name="flz"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="flz"
+        />
+
+        <property
+            name="fy_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="fy_id"
+        />
+
+        <property
+            name="gcflbz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcflbz"
+        />
+
+        <property
+            name="qj_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="qj_id"
+        />
+
+        <property
+            name="zclb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="zclb"
+        />
+
+        <property
+            name="zy_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="zy_id"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Ga08_flmx.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

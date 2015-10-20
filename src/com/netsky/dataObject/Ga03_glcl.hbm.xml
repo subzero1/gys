@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Ga03_glcl"
+        table="GA03_GLCL"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Ga03_glcl.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="cl_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="cl_id"
+        />
+
+        <property
+            name="clsl"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="clsl"
+        />
+
+        <property
+            name="de_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="de_id"
+        />
+
+        <property
+            name="xh"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="xh"
+        />
+
+        <property
+            name="cl_bh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="cl_bh"
+        />
+
+        <property
+            name="de_bh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="de_bh"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Ga03_glcl.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gb02_dlrz"
+        table="GB02_DLRZ"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gb02_dlrz.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="flag"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="flag"
+        />
+
+        <property
+            name="ip"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="ip"
+        />
+
+        <property
+            name="login_id"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="login_id"
+        />
+
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+
+        <property
+            name="op_date"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="op_date"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gb02_dlrz.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

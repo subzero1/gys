@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gd02_dxgc"
+        table="GD02_DXGC"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gd02_dxgc.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="b1_qzbz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="b1_qzbz"
+        />
+
+        <property
+            name="b1_tzxs"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b1_tzxs"
+        />
+
+        <property
+            name="b1_ybf_bz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="b1_ybf_bz"
+        />
+
+        <property
+            name="b2_bgbbl"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="b2_bgbbl"
+        />
+
+        <property
+            name="b2_jxdqdw"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b2_jxdqdw"
+        />
+
+        <property
+            name="b2_jxdqf_wfbz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="b2_jxdqf_wfbz"
+        />
+
+        <property
+            name="b2_jxdqlc"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b2_jxdqlc"
+        />
+
+        <property
+            name="b2_sgdqf_wfbz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="b2_sgdqf_wfbz"
+        />
+
+        <property
+            name="b2_sgdqlc"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b2_sgdqlc"
+        />
+
+        <property
+            name="b2_tzxs"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b2_tzxs"
+        />
+
+        <property
+            name="b3_jggr_tzxs"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b3_jggr_tzxs"
+        />
+
+        <property
+            name="b3_jxf_tzxs"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b3_jxf_tzxs"
+        />
+
+        <property
+            name="b3_jxjg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="b3_jxjg"
+        />
+
+        <property
+            name="b3_pggr_tzxs"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b3_pggr_tzxs"
+        />
+
+        <property
+            name="b3_sgtj_bz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="b3_sgtj_bz"
+        />
+
+        <property
+            name="b3_ybf_tzxs"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="b3_ybf_tzxs"
+        />
+
+        <property
+            name="b3_ybjg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="b3_ybjg"
+        />
+
+        <property
+            name="b4_sbjg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="b4_sbjg"
+        />
+
+        <property
+            name="b4_zcjg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="b4_zcjg"
+        />
+
+        <property
+            name="b5_sczbf_sjdy"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="b5_sczbf_sjdy"
+        />
+
+        <property
+            name="bgbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bgbh"
+        />
+
+        <property
+            name="bgqsym"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="bgqsym"
+        />
+
+        <property
+            name="bgxd"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bgxd"
+        />
+
+        <property
+            name="bzr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bzr"
+        />
+
+        <property
+            name="bzrgysh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bzrgysh"
+        />
+
+        <property
+            name="bzrq"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="bzrq"
+        />
+
+        <property
+            name="cjr_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="cjr_id"
+        />
+
+        <property
+            name="cjsj"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="cjsj"
+        />
+
+        <property
+            name="flk_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="flk_id"
+        />
+
+        <property
+            name="gcmc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="gcmc"
+        />
+
+        <property
+            name="gcsm"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="gcsm"
+        />
+
+        <property
+            name="gcxm_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcxm_id"
+        />
+
+        <property
+            name="gcxz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcxz"
+        />
+
+        <property
+            name="gdsj"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="gdsj"
+        />
+
+        <property
+            name="jsdw"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="jsdw"
+        />
+
+        <property
+            name="jsjd"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="jsjd"
+        />
+
+        <property
+            name="shr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="shr"
+        />
+
+        <property
+            name="shrgysh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="shrgysh"
+        />
+
+        <property
+            name="sj_bgbbl"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="sj_bgbbl"
+        />
+
+        <property
+            name="sjdw"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sjdw"
+        />
+
+        <property
+            name="sjfzr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sjfzr"
+        />
+
+        <property
+            name="xgr_bz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="xgr_bz"
+        />
+
+        <property
+            name="zy_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="zy_id"
+        />
+
+        <property
+            name="cjr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="cjr"
+        />
+
+        <property
+            name="mb"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="mb"
+        />
+
+        <property
+            name="gcbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="gcbh"
+        />
+
+        <property
+            name="sjbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sjbh"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gd02_dxgc.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

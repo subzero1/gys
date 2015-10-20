@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<configs> 
+  <!-- excel文件导入信息 -->  
+  <config> 
+    <!-- 导入配置信息名称，问配置文件中唯一标识 -->  
+    <name>test</name>  
+    <!-- 对应配置文件名，默认在importConfig文件夹内 -->  
+    <fileName>/importConfig/test.xml</fileName>  
+    <!-- 配置文件对应人id,默认为default -->  
+    <user>default</user> 
+  </config>  
+  <config> 
+    <name>b4_import</name>  
+    <fileName>/importConfig/b4_import.xml</fileName>  
+    <user>default</user> 
+  </config>  
+  <config> 
+    <name>b3j_import</name>  
+    <fileName>/importConfig/b3j_import.xml</fileName>  
+    <user>default</user> 
+  </config>
+</configs>

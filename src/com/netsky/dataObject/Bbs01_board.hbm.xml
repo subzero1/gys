@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Bbs01_board"
+        table="BBS01_BOARD"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Bbs01_board.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="admincontrol"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="admincontrol"
+        />
+
+        <property
+            name="ord"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="ord"
+        />
+
+        <property
+            name="showflag"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="showflag"
+        />
+
+        <property
+            name="lastuser_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="lastuser_id"
+        />
+
+        <property
+            name="lastbbs02_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="lastbbs02_id"
+        />
+
+        <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="description"
+        />
+
+        <property
+            name="lastrq"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="lastrq"
+        />
+
+        <property
+            name="lastsubject"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="lastsubject"
+        />
+
+        <property
+            name="lastusername"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="lastusername"
+        />
+
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+
+        <property
+            name="parentid"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="parentid"
+        />
+
+        <property
+            name="subjectcount"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="subjectcount"
+        />
+
+        <property
+            name="topiccount"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="topiccount"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Bbs01_board.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

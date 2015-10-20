@@ -1,0 +1,70 @@
+/* CSS Document */
+body { margin: 0; padding: 0; font-size: 12px; color: #333333; background-color: #ffffff; font-family: "宋体"; }
+.page { background-image: none !important; text-align: center; }
+div, form, img, ul, ol, li, dl, dt, dd,embed { margin: 0; padding: 0; border: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+table, td, tr, th, ul, li, input { font-size: 12px; }
+
+/* 链接颜色 */
+a:link { color: #000000; text-decoration: none; }
+a:visited { text-decoration: none; color: #000000; }
+a:hover { text-decoration: underline; color: #ff0000; }
+a:active { text-decoration: none; color: #000000; }
+
+/* 标题属性 */
+h1 { font: bold 24px; padding: 3px 0 0 0; }
+h2 { font: bold 20px; margin-bottom: 5px; margin-top: 0; }
+h3 { font: bold 18px; margin-bottom: 2px; }
+h4 { font: bold 16px; font-weight: bold; margin-bottom: 5px; }
+h5 { font: bold 14px; margin-bottom: 5px; }
+h6 { font: bold 12px; margin-bottom: 5px; margin-top: 6px; }
+
+/* 颜色属性 [定义规则，小写c加颜色名称] */
+.cRed, a.cRed:link, a.cRed:visited { color: #FF0000; }
+.cRed a:link, .cRed a:visited { color: #FF0000; }
+.cWhite, a.cWhite:link, a.cWhite:visited { color: #ffffff; }
+.cWhite a:link, .cWhite a:visited, .cWhite a:hover { color: #ffffff; }
+.cBlack, a.cBlack:link, a.cBlack:visited { color: #000000; }
+.cBlack a:link, .cBlack a:visited, .cBlack a:hover { color: #000000; }
+.cBlue, a.cBlue:link, a.cBlue:visited { color: #1f3a87; }
+.cBlue a:link, .cBlue a:visited { color: #1f3a87; }
+.cBlue a:hover { color: #ff0000; }
+.cDRed, a.cDRed:link, a.cDRed:visited { color: #FF6100; }
+.cDRed a:link, .cDRed a:visited, .cDRed a:hover { color: #FF6100; }
+.cGray, a.cGray:link, a.cGray:visited { color: #4F544D; }
+.cDGray, a.cDGray:link, a.cDGray:visited { color: #666; }
+
+/* 字体属性 [定义规则，小写t加属性名称] */
+.tB { font-weight: bold; }
+.tI { font-style: italic; }
+
+/* 字体大小*/
+.t12 { font-size: 12px; }
+.t14 { font-size: 14px; }
+
+/* 表单属性 */
+.inputBor { border: 1px solid #9b9b9b; background-color: #FFFFFF; vertical-align: middle; width:140px;height:24px;font-size:14px; }
+
+/* 其他属性 */
+.left { float: left; }
+.right { float: right; }
+.textcenter { text-align: center; }
+.rightalign { text-align: right; }
+.hidden { overflow: hidden; height: 227px; width: 227px; visibility: visible; }
+.clear { clear: both; font-size: 1px; width: 1px; visibility: hidden; line-height: 1px; height: 1px; }
+.clearboth { clear: both; }
+.hidden { display: none; }
+.lh150 { line-height: 150%; }
+
+/*虚线*/
+.dashed { background-image: url(images/dashed.jpg ) !important; background-repeat: repeat-x !important; background-position: center !important; height: 1px; line-height: 1px !important; font-size: 1px!important; margin: 10px 0; }
+
+/* 页面空白 */
+.blank2 { margin: 0 auto; width: 100%; height: 2px; line-height: 2px; font-size: 1px; clear: both; }
+.blank3 { margin: 0 auto; width: 100%; height: 3px; line-height: 3px; font-size: 1px; clear: both; }
+.blank9 { margin: 0 auto; width: 100%; height: 9px; font-size: 1px; line-height: 9px; clear: both; }
+.blank6 { margin: 0 auto; width: 100%; height: 6px; line-height: 6px; font-size: 1px; clear: both; }
+.blank12 { margin: 0 auto; width: 100%; height: 12px; line-height: 12px; font-size: 1px; clear: both; }
+.padding5 { padding: 5px; }
+.margintop5 { margin-top: 5px; }
+.marginright5 {margin-right: 5px; }

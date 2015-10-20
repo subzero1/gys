@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Ga13_dej"
+        table="GA13_DEJ"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Ga13_dej.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="c_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="c_id"
+        />
+
+        <property
+            name="jzbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="jzbh"
+        />
+
+        <property
+            name="mc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="mc"
+        />
+
+        <property
+            name="qsbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="qsbh"
+        />
+
+        <property
+            name="sm"
+            type="org.springframework.orm.hibernate3.support.ClobStringType"
+            update="true"
+            insert="true"
+            column="sm"
+        />
+
+        <property
+            name="z_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="z_id"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Ga13_dej.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

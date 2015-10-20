@@ -1,0 +1,118 @@
+/* CSS Document */
+
+body {
+	font-family: 宋体,Helvetica,Helv,Arial;
+	font-size: 12px;
+	line-height: 20px;
+	color: #1E4F75;
+}
+table {
+	COLOR: #1E4F75;
+	font-size: 12px;
+}
+td {
+	COLOR: #1E4F75;
+	font-size: 12px;
+	word-wrap: break-word;
+	word-break: break-all;
+	line-height: 25px;
+}
+p {
+	font-size: 12px;
+	line-height: 20px;
+}
+ul {
+	line-height: 20px;
+}
+ol {
+	font-size: 11px;
+	line-height: 20px;
+}
+A:link {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+}
+A:visited {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+}
+A:hover {
+	COLOR: #43BEE5;
+	TEXT-DECORATION: none;
+}
+
+#msg_title{
+font-size:14px;
+padding-left:20px;
+}
+
+#msg_content{
+font-size:12px;
+padding-left:15px;
+}
+
+#desk_menu td,#desk_menu a{
+color:#FFFFFF;
+}
+
+
+#list td{
+height:20px;
+padding-left:5px;
+border-bottom:solid 1px #a4bec8;
+}
+
+#list_title{
+font-weight:bold;
+text-align:center;
+background-color:#C7DBE0;  !important
+font-size:14px; !important
+}
+
+#list_content td{
+height:24px;
+border:solid 1px #A4BEC8;
+}
+
+
+/*list名称*/
+#list_name{
+color:#1E4F75;
+font-weight:bold;
+}
+
+
+/*规定list页面的查询文本框的样式*/
+.input-text{
+border:1px solid #ffffff;
+background-color:#35BAE4;
+color:#ffffff;
+height:18px;
+margin-top:2px;
+}
+
+
+#example td td{
+color:#666666;
+border:solid 1px #999999;
+}
+
+
+/*费率部分树形结构*/
+
+.CNLTreeMenu img.s {cursor:pointer;vertical-align:middle;}
+.CNLTreeMenu ul {padding:0;}
+.CNLTreeMenu li {list-style:none;padding:0;background:#ffffff}
+.Closed ul {display:none;}
+.Child{background:#ffffff}
+.Child img.s {background:none;cursor:default;}
+
+#AllOpen{color:999999;}
+#AllClose{color:999999;}
+#CNLTreeMenu ul {margin:0 0 0 16px;}
+#CNLTreeMenu img.s {width:34px;height:18px;}
+#CNLTreeMenu .Opened img.s {background:url(../images/tree-images/opened.gif) no-repeat 0 1px;}
+#CNLTreeMenu .Closed img.s {background:url(../images/tree-images/closed.gif) no-repeat 0 1px;}
+#CNLTreeMenu .Child img.s {background:url(../images/tree-images/child.gif) no-repeat 13px 2px;}
+#CNLTreeMenu {float:left;color:inherit;margin:3px;padding:3px;padding-bottom:15px;width:100%;}
+

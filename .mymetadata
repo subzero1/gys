@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="gys"
+  id="myeclipse.1236588764699"
+  context-root="/gys"
+  j2ee-spec="1.4"
+  archive="gys.war">
+  <attributes>
+    <attribute name="webrootdir" value="gys" />
+  </attributes>
+</project-module>
+

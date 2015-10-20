@@ -1,0 +1,140 @@
+/* CSS Document */
+@import url(main.css);
+
+/*页面头部*/
+#top { 
+width:1004px;
+text-align:center;
+margin:0 auto;
+}
+#link{
+float:right;
+width:230px;
+height:40px;
+margin-right:10;
+}
+.link_p{
+width:115px;
+height:40px;
+float:left;
+color:#ffffff;
+}
+
+
+#menu { 
+width:1004px;
+clear: both;
+color:#000;
+margin:0 auto;
+height: 31px;
+text-align:center;
+}
+
+
+
+/*主体*/
+#main{
+width:960px;
+text-align:center;
+}
+
+#content{
+width:730px;
+float:left;
+background:#fef3ef;
+}
+
+#login{
+width:225px;
+float:right;
+height:270px;
+font-size:14px;
+}
+
+#in td{
+font-size:14px;
+font-family:微软雅黑;
+color:#333333;
+line-height:38px;
+}
+
+.login_button {
+width:65px;
+height:27px;
+background:url(../images/login_in.gif) no-repeat;
+border:none;
+margin-left: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+cursor:pointer;
+}
+
+.register_button {
+width:115px;
+height:35px;
+background:url(../images/reg.gif) no-repeat;
+border:none;
+margin-top:10px;
+margin-left:0px;
+margin-bottom:10px;
+cursor:pointer;
+}
+
+#ad{
+width:960px;
+height:100px;
+padding:0;
+}
+
+#module{
+width:730px;
+float:left;
+height:200px;
+}
+
+.title{
+background: url(../images/title_bg.jpg) repeat-x;
+width:655px;
+border:1px solid #447C9B;
+height:24px;
+float:left;
+margin-top:8px;}
+}
+
+.title span{ 
+font-size:14px;
+font-family:宋体;
+font-weight:bold;
+color:#FFFFFF;
+width:320px;
+margin-left:16px!important;
+margin-left:8px;
+margin-top:5px;
+padding-left:5px;
+}
+
+.arrow{
+height:24px;
+width:16px;
+padding-left:15px;
+background-image:url(../images/arrows.gif); 
+background-repeat:no-repeat;
+background-position:0.2cm 0cm;
+}
+
+
+.mo{
+background:url(../images/module_bg.jpg) repeat-x;
+padding:10px;
+line-height: 170%;
+border:solid 1px #d1d5d7; border-collapse:collapse
+}
+
+#other{
+width:225px;
+float:right;
+}
+
+
+/*foot*/
+

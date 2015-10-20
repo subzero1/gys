@@ -1,0 +1,263 @@
+/* CSS Document */
+
+	body {
+		font-family: 宋体,Helvetica,Helv,Arial;
+		font-size: 12px;
+		color: #1E4F75;
+	}
+	table {
+		COLOR: #1E4F75;
+		font-size: 12px;
+	}
+	td {
+		COLOR: #1E4F75;
+		font-size: 12px;
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+	p {
+		font-size: 12px;
+	}
+	ul {
+	}
+
+
+A:link {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+}
+A:visited {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+}
+A:hover {
+	COLOR: #43BEE5;
+	TEXT-DECORATION: none;
+}
+
+/*用于所有页面的大背景*/
+#main-body{
+ background-image:url(../images/main-images/gypms_main_bg.png); 
+ background-repeat:repeat-x;
+ background-color:#f2f7f9;
+}
+
+#secTable td{
+font-size: 14px;
+color:#1E4F75;
+font-weight:bold;
+}
+
+#main-title{
+text-align:center;
+font-size:14px;
+color:#1E4F75;
+font-weight:bold;
+}
+/*form 部分*/
+#form-name{
+font-size:16px;
+color:#FFFFFF;
+}
+
+#form-button a{
+color:#FFFFFF;
+}
+
+#mainTable{
+border:solid 1px #A4BEC8;
+background-color:#FFFFFF;
+}
+
+#form{
+background:#f4fbfb;
+}
+
+#form-table td{ 
+text-align:right;
+height:35px;
+}
+
+.form-border{
+background:#FFFFFF;
+border:solid 1px #A4BEC8;
+}
+
+.autoform-button{
+font-size:12px;
+color:#1E4F75;
+vertical-align:bottom;
+}
+
+#yj{
+	border:1px solid #1E4F75;
+	width: 100%;
+}
+
+#slave_table {
+margin-left:20px;
+}
+
+.td-input{
+	border:1px solid #1E4F75;
+	width: 100%;
+	height: 22px;
+	line-height: 20px;
+	color: #666666;
+	padding-left:2px;
+}
+
+
+.td-input-noborder{
+	border:0px solid #1E4F75;
+	width: 100%;
+	height: 22px;
+	line-height: 20px;
+	color: #666666;
+	padding-left:2px;
+}
+
+.td-input-underline{
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #1E4F75;
+	padding-left:5px;
+	padding-left:2px;
+}
+
+.td-textarea{
+	border:1px solid #1E4F75;
+	width: 100%;
+	height: 96%;
+	overflow: auto;
+	color: #666666;
+	padding-left:2px;
+}
+
+.td-textarea-noborder{
+	border:0px solid #1E4F75;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	color: #666666;
+	padding-left:2px;
+}
+
+#form-list{
+border:#A4BEC8 solid 1px;
+border-collapse:collapse;
+font-weight:bold;
+}
+
+#form-list td{
+border:#A4BEC8 solid 1px;
+height:30px;
+font-weight:normal;
+padding-left:5px;
+}
+
+
+#form-list-out{ 
+height:20px;
+}
+
+#form-list-out table td{ 
+border:#A4BEC8 solid 1px;
+height:20px;
+}
+
+/*桌面页面*/
+#desk_menu td A:link {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+}
+#desk_menu td A:visited {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+}
+#desk_menu td A:hover {
+	COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+
+#msg_title{
+font-size:14px;
+padding-left:15px;
+border-bottom:#a4bec8 solid 1px;
+border-right:#a4bec8 solid 1px;
+border-left:#ffffff solid 1px;
+}
+
+#list_content td{
+border:solid 1px #a4bec8;
+font-size:12px;
+height:25px;
+}
+
+
+/*查询页面*/
+
+#search-head{
+background:url(../images/main-images/gypms_main_bg.png);
+}
+
+
+#search-list  td{
+border-bottom:solid 1px #c5ced4;
+line-height:25px;
+padding-left:5px;
+}
+
+
+#search-table{
+border:solid 1px #1E4F75;
+}
+
+#search-title{
+font-size:12px;
+font-weight:bold;
+padding-left:5px;
+background:#f8f9fa;
+text-align:center;
+}
+
+#search-list table  td{
+padding-left:5px;
+}
+
+
+#search-msg{
+border:solid 2px #90b9d6;
+} 
+
+#search-msg td{
+height:25px;
+line-height:150%;
+padding-left:5px;
+}
+
+#task-card{
+margin-top:20px;
+}
+
+#task-card td{
+border:solid 1px #90b9d6;
+padding-left:5px;
+height:25px;
+}
+
+#formList td{
+border:solid 1px #90b9d6;
+padding-left:5px;
+height:25px;
+}
+
+#cardTable2 td{
+height:20px;
+vertical-align:middle;
+border:solid 1px #1E4F75;
+}
+
+
+

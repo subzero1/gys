@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Ga02_clsb"
+        table="GA02_CLSB"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Ga02_clsb.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="clk_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="clk_id"
+        />
+
+        <property
+            name="clly"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="clly"
+        />
+
+        <property
+            name="bdj"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="bdj"
+        />
+
+        <property
+            name="bh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bh"
+        />
+
+        <property
+            name="bsj"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="bsj"
+        />
+
+        <property
+            name="bz"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bz"
+        />
+
+        <property
+            name="dw"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="dw"
+        />
+
+        <property
+            name="lb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="lb"
+        />
+
+        <property
+            name="mc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="mc"
+        />
+
+        <property
+            name="qgj"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="qgj"
+        />
+
+        <property
+            name="xhgg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="xhgg"
+        />
+
+        <property
+            name="ysj"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="ysj"
+        />
+
+        <property
+            name="zclb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="zclb"
+        />
+
+        <property
+            name="gg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="gg"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Ga02_clsb.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

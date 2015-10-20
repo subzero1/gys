@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gd01_gcxm"
+        table="GD01_GCXM"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gd01_gcxm.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="cjr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="cjr"
+        />
+
+        <property
+            name="cjr_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="cjr_id"
+        />
+
+        <property
+            name="cjrq"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="cjrq"
+        />
+
+        <property
+            name="xmbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="xmbh"
+        />
+
+        <property
+            name="xmmc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="xmmc"
+        />
+
+        <property
+            name="xmsm"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="xmsm"
+        />
+
+        <property
+            name="gcfl_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcfl_id"
+        />
+
+        <property
+            name="bgbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bgbh"
+        />
+
+        <property
+            name="bzr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bzr"
+        />
+
+        <property
+            name="bzrq"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="bzrq"
+        />
+
+        <property
+            name="jsdw"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="jsdw"
+        />
+
+        <property
+            name="jsjd"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="jsjd"
+        />
+
+        <property
+            name="shr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="shr"
+        />
+
+        <property
+            name="sjfzr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sjfzr"
+        />
+
+        <property
+            name="bzrgysh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bzrgysh"
+        />
+
+        <property
+            name="shrgysh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="shrgysh"
+        />
+
+        <property
+            name="sjbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sjbh"
+        />
+
+        <property
+            name="sjdw"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sjdw"
+        />
+
+        <property
+            name="bgqsym"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="bgqsym"
+        />
+
+        <property
+            name="flk_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="flk_id"
+        />
+
+        <property
+            name="gcxz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcxz"
+        />
+
+        <property
+            name="zy_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="zy_id"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gd01_gcxm.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

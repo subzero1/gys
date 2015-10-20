@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gb01_yhb"
+        table="GB01_YHB"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gb01_yhb.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="msn"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="msn"
+        />
+
+        <property
+            name="qq"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="qq"
+        />
+
+        <property
+            name="province"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="province"
+        />
+
+        <property
+            name="image"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="image"
+        />
+
+        <property
+            name="company_name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="company_name"
+        />
+
+        <property
+            name="email"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="email"
+        />
+
+        <property
+            name="login_date"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="login_date"
+        />
+
+        <property
+            name="phone"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="phone"
+        />
+
+        <property
+            name="sofeware_num"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sofeware_num"
+        />
+
+        <property
+            name="state"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="state"
+        />
+
+        <property
+            name="limit_date"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="limit_date"
+        />
+
+        <property
+            name="login_id"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="login_id"
+        />
+
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+
+        <property
+            name="passwd"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="passwd"
+        />
+
+        <property
+            name="remark"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="remark"
+        />
+
+        <property
+            name="role"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="role"
+        />
+        
+        <property
+            name="operate"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="operate"
+        />
+
+        <property
+            name="lxr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="lxr"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gb01_yhb.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

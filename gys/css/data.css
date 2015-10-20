@@ -1,0 +1,264 @@
+body {
+	font-family: 宋体,Helvetica,Helv,Arial;
+	font-size: 12px;
+	line-height: 20px;
+	color: #1E4F75;
+}
+table {
+	COLOR: #1E4F75;
+	font-size: 12px;
+}
+td {
+	COLOR: #1E4F75;
+	font-size: 12px;
+	word-wrap: break-word;
+	word-break: break-all;
+	line-height: 18px;
+	margin-left: 8px;
+	margin-right: 3px;
+}
+tr {
+	height: 22px;
+}
+input {
+	font-size: 12px;
+	color: #333333;	
+}
+select {
+	font-size: 12px;
+	color: #333333;	
+	
+}
+textarea {
+	font-size: 12px;
+	line-height: 150%;
+	color: #333333;
+}
+A:link {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	font-weight:bold;
+}
+A:visited {
+	COLOR: #1E4F75;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	font-weight:bold;
+}
+A:hover {
+	COLOR: #43BEE5;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+.menu{
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #e6e6e6;
+	border-bottom-color: #e6e6e6;
+}
+
+.file_title{
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	padding-top:30px;
+}
+.file_title_2{
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+	font-weight:bold;
+}
+.normal-textarea{
+	border:0px solid;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	margin-left: 5px;
+	margin-right: 3px;
+	text-valign: center;
+}
+
+#list-table{
+	border-collapse: collapse;
+	border:1px solid #808080;
+}
+
+.list-title {
+	font-weight: bold;
+	text-align: center;
+	background-color: #F0F0F0;
+}
+#list-table td {
+	border: 1px solid #808080;
+	text-indent: 4px;
+	height:23px;
+	background-color: #E8FFE8;
+}
+#list-table td input{
+	border:#E8FFE8 1px solid;
+	height: 22px;
+	width: 100%;
+	line-height: 22px;
+	margin-left: 0px;
+	background-color: #E8FFE8;
+	color: blue;
+}
+
+#list-table td textarea{
+	border:#E8FFE8 1px solid;
+	width:100%;
+	overflow-y:visible;
+	width: 100%;
+	margin-left: 0px;
+	background-color: #E8FFE8;
+	color: blue;
+}
+
+#memo_table td input{
+	width: 100%;
+	height: 100%;
+	line-height: 20px;
+	margin-left: 0px;
+	color: #FF0000;
+	text-align:center;
+}
+.bt{
+	color: #0a3a6c;
+	font-size: 12px;
+	border: 1px solid #0a3a6c;
+	background:#c4ebf7;
+	height:20px;
+}
+
+
+#main-body{
+ background-image:url(../images/main-images/gypms_main_bg.png); 
+ background-repeat:repeat-x;
+ background-color:#ffffff;
+}
+
+#secTable td{
+font-size: 12px;
+color:#1E4F75;
+font-weight:bold;
+}
+
+#main-title{
+text-align:center;
+font-size:12px;
+color:#1E4F75;
+font-weight:bold;
+}
+
+#main{
+width:100%;
+height:100%;
+position:absolute;
+overflow:scroll;
+z-index:1;
+background:#ffffff;
+}
+
+#toolbar{
+z-index:200;
+position:absolute;
+overflow:hidden;
+left:0;
+right:0;
+width:100%;
+background:url(../images/main-images/gypms_main_bg.png) repeat-x; 
+}
+
+#toolbar select{
+position:relative;
+left:-2px;
+top:-2px;
+font-size:12px;
+width:180px;
+line-height:12px;
+border:0px;
+color:#0a3a6c;
+}
+
+.box{
+border:1px solid #C0C0C0;
+width:180px;
+height:19px;
+clip:rect(0px,181px,18px,0px);
+overflow:hidden;
+} 
+
+.box2{
+border:1px solid #F4F4F4;
+width:180px;
+height:17px;
+clip:rect(0px,179px,16px,0px);
+overflow:hidden;
+}
+
+.opinion{
+z-index:600; 
+width:90%; 
+background:#ffffff;
+border:solid 2px #ff0000; 
+position: absolute; 
+top:100px; 
+left: 30px;
+padding:5px;
+line-height:150%;
+}
+
+#close{
+position: absolute;
+font-size:12px;
+right:2px;
+top:0px;
+color:#ff0000;
+cursor:hand;
+}
+
+/*------数据导入页面---------*/
+#import{
+	border: 1px solid #1E4F75;
+	line-height:30px;
+	padding:10px 15px;
+	margin:auto;
+}
+
+#import .file{
+	height:25px;
+	border:1px solid #1E4F75
+}
+
+/*------修改配置文件---------*/
+#profile td{
+	height:30px;
+	border:1px solid #1E4F75;
+}
+
+#profile input{
+	width:100%;
+	height:100%;
+	border:1px solid #ffffff;
+	color:blue;
+	padding:0 5px;
+	line-height:25px;
+}
+
+#profile select{
+	width:100%
+}
+
+#rowtable td{
+	border: none;
+}
+
+#rowtable input{
+	border-bottom:solid 1px #1e4f75;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="GBK"?>
+<excel>
+	<!-- 定义导入文件中表格信息 -->
+	<tableInfo>
+		<!-- 表格信息所在sheet位于excel文件中位置 -->
+		<sheetNum>0</sheetNum>
+		<!-- 数据开始行 -->
+		<startRow>1</startRow>
+		<endRow>10</endRow>
+		<endFlag>end</endFlag>
+		<!-- 表名称，对应持久化对象名称 -->
+		<tableName>TestObject2</tableName>
+		<!-- 表名称,用于显示 -->
+		<tableNameShow>测试表</tableNameShow>
+		<!-- 本表对应的父表信息 -->
+		<fatherTables>
+			<fatherTable>
+				<!-- 
+					父表类型，“db”位于数据库中，通过当前行某列数据查询父表信息，并将父表中某列字段写入当前表中某列 
+				-->
+				<type>db</type>
+				<!-- 父表名称，对应持久化对象名称 -->
+				<tableName>Gd02_dxgc</tableName>
+				<!-- 对应的查询字段，type为db时必须 -->
+				<searchColumn>id</searchColumn>
+				<!-- 查询字段所在列，type为db时必须 -->
+				<index>0</index>
+				<!-- 关联父表列 -->
+				<columnForSet>id</columnForSet>
+				<!-- 关联子表列 -->
+				<columnToSet>parent_id</columnToSet>
+			</fatherTable>
+		</fatherTables>
+		<!-- 当前表字段信息 -->
+		<columns>
+			<!-- byIndex:按列所在位置获取,byName: 按标题行名称获取-->
+			<type>byIndex</type>
+			<!-- 标题行位置 -->
+			<titleRow>0</titleRow>
+			<column>
+				<!-- 对应表字段名称,大写 -->
+				<columnName>TEXT</columnName>
+				<!-- 字段在excel文件中列的位置 -->
+				<index>1</index>
+				<!-- 标题行名称 -->
+				<name>内容</name>
+				<!-- 列名称 -->
+				<colName>内容</colName>
+			</column>
+		</columns>
+	</tableInfo>
+</excel>

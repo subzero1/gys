@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Bbs02_post"
+        table="BBS02_POST"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Bbs02_post.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="delflag"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="delflag"
+        />
+
+        <property
+            name="hits"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="hits"
+        />
+
+        <property
+            name="response"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="response"
+        />
+
+        <property
+            name="board_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="board_id"
+        />
+
+        <property
+            name="body"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="body"
+        />
+
+        <property
+            name="lastrq"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="lastrq"
+        />
+
+        <property
+            name="lastusername"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="lastusername"
+        />
+
+        <property
+            name="parentid"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="parentid"
+        />
+
+        <property
+            name="rootid"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="rootid"
+        />
+
+        <property
+            name="rq"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="rq"
+        />
+
+        <property
+            name="status"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="status"
+        />
+
+        <property
+            name="topic"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="topic"
+        />
+
+        <property
+            name="user_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="user_id"
+        />
+
+        <property
+            name="user_name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="user_name"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Bbs02_post.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

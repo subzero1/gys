@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gd07_b4"
+        table="GD07_B4"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gd07_b4.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="bgbh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bgbh"
+        />
+
+        <property
+            name="bh"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bh"
+        />
+
+        <property
+            name="bz"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="bz"
+        />
+
+        <property
+            name="dj"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="dj"
+        />
+
+        <property
+            name="dw"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="dw"
+        />
+
+        <property
+            name="dxgc_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="dxgc_id"
+        />
+
+        <property
+            name="gcxm_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcxm_id"
+        />
+
+        <property
+            name="mc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="mc"
+        />
+
+        <property
+            name="sj_bz"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="sj_bz"
+        />
+
+        <property
+            name="sl"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="sl"
+        />
+
+        <property
+            name="tzxs"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="tzxs"
+        />
+
+        <property
+            name="xh"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="xh"
+        />
+
+        <property
+            name="xhgg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="xhgg"
+        />
+
+        <property
+            name="zclb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="zclb"
+        />
+
+        <property
+            name="gg"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="gg"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gd07_b4.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<bean name="/baseDao"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.baseService.Dao</value>
+		</property>
+		<property name="service">
+			<ref bean="dao" />
+		</property>
+	</bean>
+	<bean name="/queryService"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.QueryService</value>
+		</property>
+		<property name="service">
+			<ref bean="queryService" />
+		</property>
+	</bean>
+	<bean name="/calculateService"
+		class ="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.CalculateService</value>
+		</property>
+		<property name= "service">
+			<ref bean="calculateService"/>
+		</property>
+	</bean>
+	<bean name="/forumService"
+		class ="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.ForumService</value>
+		</property>
+		<property name= "service">
+			<ref bean="forumService"/>
+		</property>
+	</bean>
+	<bean name="/saveService"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.SaveService</value>
+		</property>
+		<property name="service">
+			<ref bean="saveService" />
+		</property>
+	</bean>
+	<bean name="/expenseService"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.ExpenseService</value>
+		</property>
+		<property name="service">
+			<ref bean="expenseService" />
+		</property>
+	</bean>
+	<bean name="/printService"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.PrintService</value>
+		</property>
+		<property name="service">
+			<ref bean="printService" />
+		</property>
+	</bean>
+	
+	<bean name="/projectService"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.ProjectService</value>
+		</property>
+		<property name="service">
+			<ref bean="projectService" />
+		</property>
+	</bean>
+	
+	<bean name="/exportService"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.ExportService</value>
+		</property>
+		<property name="service">
+			<ref bean="exportService" />
+		</property>
+	</bean>
+	<bean name="/synchronizeInfomation"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface">
+			<value>com.netsky.service.SynchronizeInfomation</value>
+		</property>
+		<property name="service">
+			<ref bean="synchronizeInfomation" />
+		</property>
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设置上传文件的最大尺寸为1000MB -->
+		<property name="maxUploadSize">
+			<value>1048576000</value>
+		</property>
+	</bean>
+
+	<bean name="/SlaveWriter" class="com.netsky.servlet.SlaveController">
+		<property name="saveService" ref="saveService"/>
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/importer" class="com.netsky.servlet.ImportController">
+		<property name="saveService" ref="saveService"/>
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/dataWriter" class="com.netsky.servlet.DataController">
+		<property name="saveService" ref="saveService"/>
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/LoginController" class="com.netsky.servlet.LoginController">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService"/>
+	</bean>
+	<bean name="/ShowDxgcXml" class="com.netsky.servlet.ShowDxgcXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/ShowZyXml" class="com.netsky.servlet.ShowZyXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/ShowBgXml" class="com.netsky.servlet.ShowBgXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/XmmcYz" class="com.netsky.servlet.XmmcYz">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/ShowQuotaXml" class="com.netsky.servlet.ShowQuotaXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/ShowQuotaZXml" class="com.netsky.servlet.ShowQuotaZXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+    <bean name="/SaveB3" class="com.netsky.servlet.SaveB3">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService"/>
+		<property name="calculateService" ref="calculateService"/>
+		<property name="expenseService" ref="expenseService"/>
+	</bean>
+	<bean name="/SaveB4" class="com.netsky.servlet.SaveB4">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService"/>
+		<property name="calculateService" ref="calculateService"/>
+	</bean>
+	<bean name="/ClsbOp" class="com.netsky.servlet.ClsbOp">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService"/>
+		<property name="calculateService" ref="calculateService"/>
+	</bean>
+	<bean name="/SaveZhxx" class="com.netsky.servlet.ZhxxController">
+		<property name="saveService" ref="saveService"/>
+		<property name="queryService" ref="queryService"/>		
+		<property name="expenseService" ref="expenseService"/>
+		<property name="calculateService" ref="calculateService"/>
+	</bean>
+	<bean name="/GsjsXml" class="com.netsky.servlet.GsjsXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/keyEnter" class="com.netsky.servlet.keyEnter">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/getYZFL" class="com.netsky.servlet.getYZFL">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/getCLSB" class="com.netsky.servlet.getCLSB">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/SgddqdeXml" class="com.netsky.servlet.SgddqdeXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/bakServlet" class="com.netsky.servlet.BakServlet">
+		<property name="exportService" ref="exportService"/>
+	</bean>
+	<bean name="/SaveB3yb" class="com.netsky.servlet.SaveB3yb">
+	 	<property name="queryService" ref="queryService"/>
+	 	<property name="saveService" ref="saveService"/>
+		<property name="calculateService" ref="calculateService"/>
+	</bean>
+	<bean name="/keyEnterYB" class="com.netsky.servlet.keyEnterYB">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/SaveB1" class="com.netsky.servlet.SaveB1">
+		<property name="queryService" ref="queryService"/>
+	 	<property name="saveService" ref="saveService"/>
+	 	<property name="calculateService" ref="calculateService"/>
+	</bean>
+	<bean name="/Qfqj" class="com.netsky.servlet.Qfqj">
+		<property name="queryService" ref="queryService"/>
+	 	<property name="saveService" ref="saveService"/>
+	</bean>
+	<bean name="/GcxmDelController" class="com.netsky.servlet.GcxmDelController">
+	 	<property name="saveService" ref="saveService"/>
+	</bean>
+	<bean name="/JgfszXml" class="com.netsky.servlet.JgfszXml">
+	 	<property name="calculateService" ref="calculateService"/>
+	</bean>
+	<bean name="/XxtbController" class="com.netsky.servlet.XxtbController">
+		<property name="queryService" ref="queryService"/>
+	 	<property name="saveService" ref="saveService"/>
+	 	<property name="expenseService" ref="expenseService"/>
+		<property name="calculateService" ref="calculateService"/>
+	</bean>
+	<bean name="/YlGcxzXml" class="com.netsky.servlet.YlGcxzXml">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/DxgctbController" class="com.netsky.servlet.DxgctbController">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService" />
+	</bean>
+	<bean name="/EachB4" class="com.netsky.servlet.EachB4">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService" />
+		<property name="calculateService" ref="calculateService"/>
+		<property name="expenseService" ref="expenseService"/>
+	</bean>
+	<bean name="/Reply" class="com.netsky.servlet.Reply">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService" />
+		<property name="forumService" ref="forumService" />
+	</bean>
+	<bean name="/PostSubject" class="com.netsky.servlet.PostSubject">
+		<property name="queryService" ref="queryService"/>
+		<property name="saveService" ref="saveService" />
+	</bean>
+	<bean name="/CheckUserName" class="com.netsky.servlet.CheckUserName">
+		<property name="queryService" ref="queryService"/>
+	</bean>
+	<bean name="/SynchronizeController" class="com.netsky.servlet.SynchronizeController">
+	    <property name="queryService" ref="queryService"/>
+	    <property name="synchronizeInfomation" ref="synchronizeInfomation"/>
+	    <property name="calculateService" ref="calculateService"/>
+	</bean>
+</beans>

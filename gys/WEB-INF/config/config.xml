@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName">
+			<value>oracle.jdbc.driver.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@132.232.8.37:1521:pss</value>
+		</property>	
+		<property name="username">
+			<value>gys</value>
+		</property>
+		<property name="password">
+			<value>netsky</value>
+		</property>
+		<property name="maxIdle">
+			<value>10</value>
+		</property>
+		<property name="minIdle">
+			<value>3</value>
+		</property>
+	</bean>
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler"
+		lazy-init="true" />
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="lobHandler" ref="lobHandler" />
+		<property name="mappingResources">
+			<list>
+				<value>com/netsky/dataObject/Ga00_zclb.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga01_de.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga02_clsb.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga03_glcl.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga04_flk.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga05_fy.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga06_zy.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga07_qfqj.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga08_flmx.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga09_kcxs.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga10_dwjjd.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga11_dec.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga12_dez.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga13_dej.hbm.xml</value>
+				<value>com/netsky/dataObject/Ga14_b3jcfl.hbm.xml</value>		
+				<value>com/netsky/dataObject/Gb01_yhb.hbm.xml</value>
+				<value>com/netsky/dataObject/Gb02_dlrz.hbm.xml</value>
+				<value>com/netsky/dataObject/Gb03_bgxx.hbm.xml</value>
+				<value>com/netsky/dataObject/Gb04_gcfl.hbm.xml</value>
+				<value>com/netsky/dataObject/Gb05_yhk.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd01_gcxm.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd02_dxgc.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd03_gcfysz.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd04_clfysz.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd05_b3j.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd06_b3y.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd07_b4.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd09_degl.hbm.xml</value>
+				<value>com/netsky/dataObject/Gd10_b3fl.hbm.xml</value>
+				<value>com/netsky/dataObject/Bbs03_slave.hbm.xml</value>
+				<value>com/netsky/dataObject/Bbs01_board.hbm.xml</value>
+				<value>com/netsky/dataObject/Bbs02_post.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.OracleDialect
+				</prop>
+				<prop key="hibernate.cache.provider_class">
+					org.hibernate.cache.EhCacheProvider
+				</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="txProxyTemplate" name="txProxyTemplate"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		abstract="true">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+	<bean id="dao" class="com.netsky.baseService.BaseDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="queryService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.netsky.service.impl.QueryServiceImpl" autowire="byType">
+			</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="saveService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.netsky.service.impl.SaveServiceImpl" autowire="byType">
+			</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="updateByHSql">PROPAGATION_REQUIRED</prop>
+				<prop key="removeObject">PROPAGATION_REQUIRED</prop>
+				<prop key="getHiberbateSession">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="expenseService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.netsky.service.impl.ExpenseServiceImpl" autowire="byName">
+			</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="calculateService" parent="txProxyTemplate" autowire="byType">
+		<property name="target">
+		   	<bean class="com.netsky.service.impl.CalculateServiceImpl">
+		   		<property name="queryService">
+					<ref bean="queryService"/>
+				</property>
+				<property name="saveService">
+					<ref bean="saveService"/>
+				</property>
+		   	</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="B1Calculate">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="forumService" parent="txProxyTemplate" autowire="byType">
+		<property name="target">
+		   	<bean class="com.netsky.service.impl.ForumServiceImpl">
+		   		<property name="queryService">
+					<ref bean="queryService"/>
+				</property>
+				<property name="saveService">
+					<ref bean="saveService"/>
+				</property>
+		   	</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="printService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.netsky.service.impl.PrintServiceImpl" autowire="byName">
+			</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="projectService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.netsky.service.impl.ProjectServiceImpl" autowire="byName">
+			</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="copyProject">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="exportService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.netsky.service.impl.ExportServiceImpl" autowire="byName">
+			</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="impBak">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="synchronizeInfomation" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.netsky.service.impl.SynchronizeInfomationImpl" autowire="byName">
+			</bean>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

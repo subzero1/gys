@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.netsky.dataObject.Gd09_degl"
+        table="GD09_DEGL"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Integer"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Gd09_degl.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="cl_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="cl_id"
+        />
+
+        <property
+            name="de_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="de_id"
+        />
+
+        <property
+            name="dxgc_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="dxgc_id"
+        />
+
+        <property
+            name="gcxm_id"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="gcxm_id"
+        />
+
+        <property
+            name="glsl"
+            type="java.lang.Double"
+            update="true"
+            insert="true"
+            column="glsl"
+        />
+
+        <property
+            name="zclb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sclb"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Gd09_degl.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>
